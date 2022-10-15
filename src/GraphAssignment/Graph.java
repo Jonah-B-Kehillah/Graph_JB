@@ -7,6 +7,7 @@ public class Graph {
 	
 	private HashSet<Node> nodes;
 	private HashSet<Edge> edges;
+
 	
 	/**
 	 *
@@ -24,11 +25,15 @@ public class Graph {
 		
 	}
 	
+	public HashSet<Node> getNodes() {return nodes;}
+	public HashSet<Edge> getEdges() {return edges;}
+	
 	public String toString() {
 		String out = "";
 		out += nodes.toString().replace("[", "").replace("]", "");
 		out += "\n";
-		out += edges.toString().replace("[", "").replace("]", "");
+		out += edges.toString().replace("[", "").replace("]", "")
+				.replace(", ", "\n");
 		return out;
 	}
 	
