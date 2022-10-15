@@ -1,4 +1,4 @@
 package GraphAssignment;
 
-public class Vertex {
+public class Node {
 }
