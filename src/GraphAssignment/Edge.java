@@ -7,10 +7,8 @@ public class Edge {
 	 *
 	 * @param start The starting node
 	 * @param end The ending node
-	 * @throws IllegalArgumentException if the {@code start} and {@code end} nodes are equal.
 	 */
-	public Edge(Node start, Node end) throws IllegalArgumentException {
-		if(start == end) throw new IllegalArgumentException("An edge must connect two separate Nodes");
+	public Edge(Node start, Node end) {
 		this.start = start;
 		this.end = end;
 	}
